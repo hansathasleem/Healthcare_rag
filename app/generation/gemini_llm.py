@@ -8,7 +8,7 @@ from app.config import GEMINI_API_KEY, GEMINI_MODEL
 client = genai.Client(api_key=GEMINI_API_KEY)
 
 
-# Generate answer using retrieved context
+# Generate answer using retrieved context:
 def generate_answer(userquery, context):
 
     prompt = f"""
